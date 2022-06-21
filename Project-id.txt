@@ -1,0 +1,31 @@
+This is good advice for Rails, but for Ruby, I’d say making things like a 
+-> Simple HTTP Server with Ruby
+-> Pig Latin translator, 
+-> hangman game, 
+-> sudoku solver, and 
+-> csv-backed to-do list “app” that run in the terminal would be better. 
+-> Creating an object-oriented quiz game
+-> Fething latitiude and Logitude Towards through Google APi 
+is what really made things click for me.
+-> Finding Difficulty managing People a simple apllication that Hels To Group People according To the Work, Emoji Used to Interprete about People,Date-Holder, Last-Talk, Topics Discuss, Is it a purpose Driven Person,can be able to import into excel, Basically a Dashboard.
+-> ChatBot in Ruby
+P1: Simple HTTP Server WIth Ruby
+
+-> What Happens When YOu Visit A URL in A browser?
+There are Different Services Over the Web That Communicate With Each Other Like SMTP For email, FTP For File Transfer and Over that There Is a HTTP That Helps TO maintain a Connection Between the WEbserver and Browser
+
+	What Is HTTP?
+	It is a Response and Request Protocol that describes Our Webserver to exchange the Message in browser
+	->How Does a internet Work
+	URL(Uniformed Resource Locater) Syntax
+ 	protocol://hostname:port/path-or-file-name
+
+-> What Do we Need?
+WE Need A Tool That Can Listen TO Bi-Directional Communication between Client And Server and This Leads Us TO Socket, Or Socket-Programming. Sockets are A End-point For a Two way Communication that is happeneing for a network it is bond to a port that is rresponsible for a tcp
+
+-> What we Need To Build This Is?
+	->Listen TO Connection
+	->Parse THe Request
+	->Build and Send The Responce 
+
+-> 
