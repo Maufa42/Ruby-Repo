@@ -33,8 +33,13 @@
 
 - Instance Variable: They are creted inside the class can be accessible to instance of class,as well as itself.
   - Class Varaible must be initialised at the class level outside the method defination.
-  - They are Declared with starting the varaible name with one (`@`)
+  - They are Declared with starting the varaible name with one (`@`).
 
-- Local Variable: 
-->Summary 
-->Exercise
+- Local Variable: Local variables are the most common variables you will come across and obey all scope boundaries
+
+->Summary: 
+  - Variables to store information for later use and how to get information from a user. 
+  - We also showed that not all variables are created equal and that the scope in which a variable is defined changes its availability throughout the program.
+  - Now that you know the different types of variables and how to use them, let's put some of that knowledge into practice with some exercises
+  
+->Exercise:
