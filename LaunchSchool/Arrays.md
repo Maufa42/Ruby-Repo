@@ -118,20 +118,87 @@ arr[row_number][Col_number] = value_to_be_inserted
 
 ## Common Array Methods
 
-- include?
-- flatten
-- each_index
-- each_with_index
-- sort
-- product
+- .include? : The include? method checks to see if the argument given is included in the array.
+  - It Returns A Boolean Value
+  -Such Methods Are Also Called `predicates`
+  ```
+  a = [1,2,3,45]
+  a.include?(45)
+  > true
+  ```
+- .flatten : Takes nested Array as input and convert it into 1-D Array.
+  ```
+  a2 = [[4,5,6,],[2,1,],[45,24]]
+  a2.flatten
+  > [4,5,6,2,1,45,24]
+  ```
+- .each_index : It Iterates Over the `Index` rather than the Actual Value
+  ```
+  a3 = [1,2,3]
+  a.each_index{|i| puts "this is index #{i}"}
+  > This is index 0
+  > This is index 1
+  > This is index 2
+  ```
+- .each_with_index: It give us the modility to edit both the value and index by passing two parameters of the block
+  ```
+  a4 = [10,20,30,40,50]
+  a4.each_with_index{|val,idx| puts "#{idx+1}. #{val}"}
+  > 1. 10
+  > 2. 20
+  > 3. 30
+  ```
+- .sort: It arrange the array in `Montionic` Fashion
+- .product: Used To combine the Array in intersting Way.
+  ```
+  irb :001 > [1, 2, 3].product([4, 5])
+  > [[1, 4], [1, 5], [2, 4], [2, 5], [3, 4], [3, 5]]
+  ```
 
 ## Array Iterators
 
  Following are the Ways
 - `.select` iterates over an array and returns an new array that includes any items that returns `true`.
- - `.each`  methods work on `Object` that allows for iteration and commonly used along with block.
- -  `.map` creates and returns a new array containing the values returned by the block.
+  ```
+  num = Array.new(1...9)
+  num.select {|num| num > 4}
+
+  > 5,6,7,8,9
+  ```
+
+- `.each`  methods work on `Object` that allows for iteration and commonly used along with block.
+  ```
+  a = [1,2,3]
+  a.each{|e| puts e}
+  > 1
+  > 2
+  > 3
+  ```
+-  `.map` creates and returns a new array containing the values returned by the block.
+  ```
+  a2 = [2,4,6]
+  a2.map{|x| x**2}
+  > 4
+  > 16
+  > 36
+  ```
 
 ## Summary
+- It's The Most Commonly Used Data set and It has the capabilities to store different type data or called mixed at a time.
 
-## Exit
+## Exercise
+
+<details>
+<summary>Below we have given you an array and a number. Write a program that checks to see if the number appears in the array. arr = [1,2,3,4,5,6] number  = 3
+</summary>
+<br>
+arr.select{|num| num == number}
+<br>
+<br>
+
+if arr.include?(number)<br>
+  puts "#{number} is indeed Available"
+  <br>
+else
+  puts "This is not Working out"
+</details>
