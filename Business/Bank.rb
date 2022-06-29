@@ -36,7 +36,7 @@ Basket: 001,002,001,003
 Total price expected: $73.76
 =end
 
-class Busines
+class Business
   
   attr_accessor :bag
   
