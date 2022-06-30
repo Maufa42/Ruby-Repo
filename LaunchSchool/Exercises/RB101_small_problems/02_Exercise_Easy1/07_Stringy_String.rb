@@ -13,5 +13,20 @@ The tests above should print true.
 =end
 
 def stringy(num)
-  num.each{|ones| <<}
+  binary_string = String.new
+
+  num.times do |index|
+    binary_string << if index.even?
+                       '1'
+                     else
+                       '0'
+                     end
+  end
+
+  binary_string
 end
+
+puts stringy(6) == '101010'
+puts stringy(9) == '101010101'
+puts stringy(4) == '1010'
+puts stringy(7) == '1010101'
