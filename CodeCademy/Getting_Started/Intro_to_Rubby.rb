@@ -45,3 +45,5 @@ In String You Can dO the Nesting in Varios Methos Like This
 org_name = "OnGraph"
 
 print org_name.reverse.downcase
+def funciton{    
+}
