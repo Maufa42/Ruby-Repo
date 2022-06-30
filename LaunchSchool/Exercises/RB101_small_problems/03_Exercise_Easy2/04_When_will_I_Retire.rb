@@ -15,6 +15,11 @@ You have only 40 years of work to go!
 def retire_year
   print "What is your age? "
   age_inp = gets.chomp.to_i
-  retd_year = Time.now.year + (age)
-  print "It's #{Time.now.year}. You will retire in #{retd_year}.\n You have only #{} years of work to go!"
+  print "At what age would you like to retire? "
+  retd_year_inp = gets.chomp.to_i
+
+  retd_year = retd_year_inp - age_inp
+  print "It's #{Time.now.year}. You will retire in #{Time.now.year+retd_year}.\n You have only #{retd_year} years of work to go!"
 end
+
+retire_year
