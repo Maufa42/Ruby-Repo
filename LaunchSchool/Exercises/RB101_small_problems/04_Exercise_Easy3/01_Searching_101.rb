@@ -34,3 +34,33 @@ The number 17 appears in [25, 15, 20, 17, 23].
 18
 The number 18 does not appear in [25, 15, 20, 17, 23].
 =end
+def display(string)
+  puts "==> #{string}"
+end
+
+
+def ask_number
+  list = []
+  display("Enter the 1st number: ")
+  list.push(gets.to_i)
+  display("Enter the 2nd number: ")
+  list.push(gets.to_i)
+  display("Enter the 3rd number: ")
+  list.push(gets.to_i)
+  display("Enter the 4th number ")
+  list.push(gets.to_i)
+  display("Enter the 5th number: ")
+  list.push(gets.to_i)
+end
+
+number_list = ask_number
+
+display("Enter the Last number")
+lst_number = gets.to_i
+
+if number_list.include?(lst_number)
+  puts"The number #{lst_number} appears in #{number_list}. "
+else
+  puts"The number #{lst_number} does not appear in #{number_list}."
+end
+
